@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Edmonton</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #2196F3;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav a {
+            color: white;
+            padding: 15px 20px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #575757;
+        }
+        main {
+            padding: 20px;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .card {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin: 10px;
+            padding: 15px;
+            width: 30%;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .card img {
+            width: 100%;
+            border-radius: 8px 8px 0 0;
+        }
+        .card h3 {
+            margin-top: 0;
+        }
+        footer {
+            background-color: #2196F3;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Edmonton</h1>
+        <p>Discover the beauty and adventure of Edmonton</p>
+    </header>
+    <nav>
+        <a href="#attractions">Attractions</a>
+        <a href="#activities">Activities</a>
+        <a href="#accommodations">Accommodations</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <main>
+        <section id="attractions">
+            <h2>Top Attractions</h2>
+            <div class="container">
+                <div class="card">
+                    <img src="Tourism/image-1.jpg" alt="">
+                    <h3>Attraction 1</h3>
+                    <p>Description of attraction 1.</p>
+                </div>
+                <div class="card">
+                    <img src="Tourism/image-2.jpg" alt="">
+                    <h3>Attraction 2</h3>
+                    <p>Description of attraction 2.</p>
+                </div>
+                <div class="card">
+                    <img src="Tourism/image-3.jpg" alt="">
+                    <h3>Attraction 3</h3>
+                    <p>Description of attraction 3.</p>
+                </div>
+            </div>
+        </section>
+        <section id="activities">
+            <h2>Exciting Activities</h2>
+            <p>Details about various activities in Edmonton.</p>
+        </section>
+        <section id="accommodations">
+            <h2>Comfortable Accommodations</h2>
+            <p>Information about hotels and other accommodations.</p>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Contact details and form for inquiries.</p>
+        </section>
+    </main>
+    <footer>
+        <p>© 2025 Explore Edmonton</p>
+    </footer>
+</body>
+</html>
+

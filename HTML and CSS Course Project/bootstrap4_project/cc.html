@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Protfolio Web</title>
+
+<!-- Color Scheme -->
+<style>
+:root {
+--primary-color: #2c3e50; /* Dark Blue */
+--secondary-color: #3498db; /* Light Blue */
+--accent-color: #e74c3c; /* Red */
+--background-color: #ecf0f1; /* Light Gray */
+}
+</style>
+
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Open+Sans&display=swap" rel="stylesheet">
+
+<style>
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+font-family: 'Open Sans', sans-serif;
+line-height: 1.6;
+background-color: var(--background-color);
+}
+
+/* Header Styles */
+header {
+background-color: var(--primary-color);
+color: white;
+padding: 1rem;
+position: fixed;
+width: 100%;
+top: 0;
+}
+
+nav {
+max-width: 1200px;
+margin: 0 auto;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+nav ul {
+display: flex;
+list-style: none;
+}
+
+nav ul li {
+margin-left: 2rem;
+}
+
+nav a {
+color: white;
+text-decoration: none;
+font-family: 'Poppins', sans-serif;
+}
+
+/* Hero Section */
+.hero {
+height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+padding: 2rem;
+background: linear-gradient(rgba(44, 62, 80, 0.9), rgba(44, 62, 80, 0.8)),
+url('your-image.jpg') center/cover;
+color: white;
+}
+
+.hero h1 {
+font-family: 'Poppins', sans-serif;
+font-size: 3rem;
+margin-bottom: 1rem;
+color: var(--secondary-color);
+}
+
+/* Sections */
+.section {
+padding: 5rem 2rem;
+max-width: 1200px;
+margin: 0 auto;
+}
+
+.section h2 {
+font-family: 'Poppins', sans-serif;
+color: var(--primary-color);
+margin-bottom: 2rem;
+}
+
+/* Projects Grid */
+.projects-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+gap: 2rem;
+}
+
+.project-card {
+background: white;
+padding: 1rem;
+border-radius: 5px;
+box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Contact Form */
+.contact-form {
+max-width: 600px;
+margin: 0 auto;
+}
+
+input, textarea {
+width: 100%;
+padding: 0.5rem;
+margin-bottom: 1rem;
+border: 1px solid #ddd;
+}
+
+button {
+background-color: var(--accent-color);
+color: white;
+padding: 0.8rem 2rem;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+
+/* Footer */
+footer {
+background-color: var(--primary-color);
+color: white;
+text-align: center;
+padding: 1rem;
+margin-top: 3rem;
+}
+</style>
+</head>
+<body>
+<header>
+<nav>
+<h2>UA</h2>
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#github">GitHub</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+</header>
+
+<section class="hero" id="home">
+<div>
+<h1>Umair Aziz</h1>
+<p>Full Stack Developer & UI Designer</p>
+<button>Tech Academy's Portfolio
+The computer programmer is a creator of universes for which he alone is the lawgiver.
+No playwright, no stage director, no emperor, however powerful, has ever exercised such absolute authority to arrange a stage or
+field of battle and to command such unswervingly dutiful actors or troops. 
+-Joseph Weizenbaum </button>
+</div>
+</section>
+
+<section class="section" id="about">
+<h2>About Me</h2>
+<p>My name is Umair Aziz Welcome to my portfolio website. On it, I will tell you about my background and experience.
+
+Thank you for stopping by and enjoy!I am a software developer who loves to code! As a father of two, I enjoy time with my family and traveling.
+
+I am a graduate of The Tech Academy’s Software Developer Boot Camp, and trained and experienced in the following web and programming languages: HTML, CSS, JavaScript, SQL, C# and more.
+
+I am a full-stack developer and would love to work with you on your project. Contact me below!</p>
+</section>
+
+<section class="section" id="projects">
+<h2>My Projects</h2>
+<div class="projects-grid">
+<!-- Add project cards here -->
+</div>
+</section>
+
+<section class="section" id="contact">
+<h2>Contact Me</h2>
+<form class="contact-form">
+<input type="text" placeholder="Name">
+<input type="email" placeholder="Email">
+<textarea rows="5" placeholder="Message"></textarea>
+<button type="submit">Send Message</button>
+</form>
+</section>
+
+<footer>
+<p>&copy; 2023 Umair Aziz . All rights reserved.</p>
+</footer>
+</body>
+</html>
